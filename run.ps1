@@ -11,4 +11,4 @@ docker run -it --rm --mount type=bind,source="${pwd}\analysis-result",target=/ap
 --mount type=bind,source="${pwd}\logs",target=/app/logs `
 --mount type=bind,source="${pwd}\results",target=/app/results `
 --mount type=bind,source="${pwd}\exec_counts",target=/app/exec_counts `
-beversnl/es-model-seeding:0.1-SNAPSHOT $iterations $classes_file $process_limit $search_budget $exec_count_file
+beversnl/cubtg-es-evaluation:1.0.0 $iterations $classes_file $process_limit $search_budget $exec_count_file
